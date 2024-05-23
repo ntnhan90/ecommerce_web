@@ -1,19 +1,16 @@
 import { Container } from 'react-bootstrap'
 import React from 'react'
-
+import '@/styles/admin/globals.scss'
 export default function Layout({
   children,
 }: {
   children: React.ReactNode;
 }) {
   return (
-    <div className="bg-light min-vh-100 d-flex flex-row align-items-center dark:bg-transparent">
-        <>
-            admin layoiut
-        </>
-        <Container>
+    <html lang="en">
+        <body>
             {children}
-        </Container>
-    </div>
+        </body>
+    </html>
   )
 }
