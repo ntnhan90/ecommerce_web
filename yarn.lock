@@ -2057,6 +2057,13 @@ next@14.2.3:
     "@next/swc-win32-ia32-msvc" "14.2.3"
     "@next/swc-win32-x64-msvc" "14.2.3"
 
+nextjs-progressloader@^1.2.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/nextjs-progressloader/-/nextjs-progressloader-1.2.0.tgz#dcf39f5b6fe4cbb2011206aea1a138df40523032"
+  integrity sha512-S2gD7nmb0smFaDjI48n+CHkCRoyi9GjqLDmndyHHvTyUXfDsHnmJWruYaPuusZi3Gdryz+2cd/Xjduh8x8KCLA==
+  dependencies:
+    nprogress "^0.2.0"
+
 normalize-path@^3.0.0, normalize-path@~3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/normalize-path/-/normalize-path-3.0.0.tgz#0dcd69ff23a1c9b11fd0978316644a0388216a65"
