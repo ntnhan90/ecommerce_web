@@ -9,10 +9,13 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@fortawesome/free-solid-svg-icons": "^6.5.2",
+    "@fortawesome/react-fontawesome": "^0.2.2",
     "@types/jsonwebtoken": "^9.0.6",
     "axios": "^1.7.2",
     "bootstrap": "^5.3.3",
     "chart.js": "^4.4.3",
+    "cookie": "^0.6.0",
     "date-fns": "^3.6.0",
     "dotenv": "^16.4.5",
     "i18next": "^23.11.5",
@@ -25,6 +28,7 @@
     "nprogress": "^0.2.0",
     "react": "^18",
     "react-bootstrap": "^2.10.2",
+    "react-chartjs-2": "^5.2.0",
     "react-dom": "^18",
     "react-hook-form": "^7.51.5",
     "react-paginate": "^8.2.0",
@@ -32,9 +36,12 @@
     "react-spinners": "^0.13.8",
     "react-toastify": "^10.0.5",
     "uuid": "^9.0.1",
+    "zod": "^3.23.8",
+    "zod-i18n-map": "^2.27.0",
     "zustand": "^4.5.2"
   },
   "devDependencies": {
+    "@types/cookie": "^0.6.0",
     "@types/lodash": "^4.17.4",
     "@types/node": "^20",
     "@types/react": "^18",
