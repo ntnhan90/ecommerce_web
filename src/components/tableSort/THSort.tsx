@@ -7,15 +7,12 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 type Props = {
     name: string;
-    setSort? :(sort:string) => void;
-    setOrder? : (order:string) => void;
 } & PropsWithChildren
 
 export default function THSort( props: Props){
     const {
-        name, children, setSort, setOrder
+        name, children
     } = props
-    const [icon, setIcon] =  useState(faSort);
     const router = useRouter();
     const pathname = usePathname();
     const searchParams = useSearchParams()
@@ -23,16 +20,9 @@ export default function THSort( props: Props){
     const order = searchParams.get('order');
 
     const onClick = () =>{
-        if(setOrder) {
-            setOrder(order === 'asc' ? 'desc' : 'asc')
-        }
-
-        if(setSort){
-            setSort(name)
-        }
         const newSearchParams = new URLSearchParams(searchParams);
-        newSearchParams.set('sort', name);
-        newSearchParams.set('order', order === 'asc' ? 'desc' : 'asc')
+        newSearchParams.set('sort', name)
+        newSearchParams.set('order', order === 'asc' ? 'desc' : 'asc');
 
         router.push(`${pathname}?${newSearchParams}`)
     }
