@@ -2,6 +2,9 @@ import { Container } from 'react-bootstrap'
 import React from 'react'
 import '@/styles/admin/globals.scss'
 import SidebarProvider from '@/ui/admin/SidebarProvider';
+import SidebarOverlay from '@/ui/admin/sidebar/SidebarOverlay';
+import Sidebar from '@/ui/admin/sidebar/Sidebar';
+import SidebarNav from '@/ui/admin/sidebar/SidebarNav';
 import Footer from '@/ui/admin/footer/Footer';
 export default function Layout({
   children,
@@ -10,7 +13,12 @@ export default function Layout({
 }) {
   return (
     <SidebarProvider>
+		<SidebarOverlay />
+		<Sidebar>
+			<SidebarNav />
+		</Sidebar>
       	<div className="wrapper d-flex flex-column min-vh-100">
+			
 			<div className="body flex-grow-1 px-sm-2 mb-4">
 				<Container fluid="lg">
 					{children}
@@ -19,6 +27,7 @@ export default function Layout({
 
         	<Footer />
       	</div>
+		<SidebarOverlay />
     </SidebarProvider>
   )
 }
