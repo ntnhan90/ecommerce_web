@@ -23,7 +23,7 @@ export default async function RootLayout({
   	const dictionary = await getDictionary()
   	return (
 		<html lang="en" data-bs-theme={getTheme()}>
-			<body>
+			<body cz-shortcut-listen="true">
 				<DictionaryProvider dictionary={dictionary}>
 				{children}
 				</DictionaryProvider>

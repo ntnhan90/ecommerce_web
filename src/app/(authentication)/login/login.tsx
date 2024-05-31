@@ -1,11 +1,11 @@
 
 
 
-export default function Login(){
+export default function LoginForm(){
 
     return (
         <>  
-            Login
+            Login 1
             
         </>
     )
