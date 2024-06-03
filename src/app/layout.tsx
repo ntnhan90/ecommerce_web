@@ -6,6 +6,7 @@ import ProgressBar from "@/components/progressBar/progressBar";
 import DictionaryProvider from '@/locales/DictionaryProvider'
 import { getDictionary } from '@/locales/dictionary'
 import getTheme from '@/themes/theme'
+import './globals.css'
 
 const inter = Inter({ subsets: ["latin"] });
 config.autoAddCss = false
