@@ -5,7 +5,6 @@ import { SearchParams } from "@/types/next";
 import Index from "./index"
 import serverFetch from "@/utils/server-fetch";
 import { getLocale } from "@/locales/dictionary";
-import { string } from "zod";
 
 const fetchPokemon = async( searchParam: SearchParams) =>{
     const locale = getLocale();
@@ -56,10 +55,9 @@ const fetchPokemon = async( searchParam: SearchParams) =>{
 }
 
 export default async function Page({searchParams} :{searchParams: SearchParams}){
+    const props = await fetchPokemon(searchParams);
 
     return(
-        <>
-        2312
-        </>
+        <Index props={props} />
     )
 }

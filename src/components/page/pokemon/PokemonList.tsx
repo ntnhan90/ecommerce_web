@@ -37,7 +37,53 @@ export default function PokemonList(props : Props){
                 </tr>
             </thead>
             <tbody>
-                Pokemon List
+                { pokemons.map((pokemon) =>(
+                    <tr key={pokemon.id}>
+                        <td>{pokemon.id}</td>
+                        <td>
+                            <div className="position-relative mx-auto" style={{width: '70px', height: "70px"}}>
+                                <Image fill style={{objectFit: 'contain'}}
+                                    alt={pokemon.pokemondb_identifier}
+                                    sizes="5vw"
+                                    src={`https://img.pokemondb.net/sprites/home/normal/2x/${pokemon.pokemondb_identifier}.jpg`}
+                                />
+                            </div>
+                        </td>
+                        <td>{pokemon.name}</td>
+                        <td>
+                            { pokemon.types.map((type) =>(
+                                <span key={type.id} className="me-2"><PokemonTypeLabel type={type}/></span>
+                            ))}
+                        </td>
+                        <td className="text-center" style={{whiteSpace: 'pre'}}>
+                            {pokemon.egg_groups.map((eggGroup) => eggGroup.name).join('\n')}
+                        </td>
+                        <td className="text-end">{pokemon.hp}</td>
+                        <td className="text-end">{pokemon.attack}</td>
+                        <td className="text-end">{pokemon.defense}</td>
+                        <td className="text-end">{pokemon.special_attack}</td>
+                        <td className="text-end">{pokemon.special_defense}</td>
+                        <td className="text-end">{pokemon.defense}</td>
+                        <td className="text-end">{pokemon.total}</td>
+                        <td>
+                            <Dropdown>
+                            <DropdownToggle
+                                as="button"  bsPrefix="btn"
+                                className="btn-link rounded-0 text-black-50 dark:text-gray-500 shadow-none p-0"
+                                id={`action-${pokemon.id}`}
+                                >
+                                    <FontAwesomeIcon fixedWidth icon={faEllipsisVertical} />
+                                </DropdownToggle>
+                                <DropdownMenu>
+                                    <DropdownItem> {dict.action.info}</DropdownItem>
+                                    <Link href={`pokemons/${pokemon.id}/edit`} passHref legacyBehavior>
+                                        <DropdownItem> {dict.action.edit}</DropdownItem>
+                                    </Link>
+                                </DropdownMenu>
+                            </Dropdown>
+                        </td>
+                    </tr>
+                ))}
             </tbody>
         </Table>
     )
