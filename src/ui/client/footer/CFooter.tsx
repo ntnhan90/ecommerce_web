@@ -1,32 +1,104 @@
 import Link from "next/link";
-import { Container } from "react-bootstrap";
-
+import { Container, Row } from "react-bootstrap";
+import Image from "next/image";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faUser, faMapMarkerAlt , faPhoneAlt, faEnvelope, faAngleRight} from "@fortawesome/free-solid-svg-icons"
+import { faFacebookF, faTwitter, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 
 export default function CFooter(){
     return(
-        <div className="footer">
-            <div className="container">
-                <div className="col-md-4 col-sm-4 padding-top-10">
-                    2015 © Keenthemes. ALL Rights Reserved. 
-                </div>
-                <div className="col-md-4 col-sm-4">
-                <ul className="list-unstyled list-inline pull-right">
-                    {/*
-                              <li><img src="assets/corporate/img/payments/western-union.jpg" alt="We accept Western Union" title="We accept Western Union"></li>
-                    <li><img src="assets/corporate/img/payments/american-express.jpg" alt="We accept American Express" title="We accept American Express"></li>
-                    <li><img src="assets/corporate/img/payments/MasterCard.jpg" alt="We accept MasterCard" title="We accept MasterCard"></li>
-                    <li><img src="assets/corporate/img/payments/PayPal.jpg" alt="We accept PayPal" title="We accept PayPal"></li>
-                    <li><img src="assets/corporate/img/payments/visa.jpg" alt="We accept Visa" title="We accept Visa"></li>
-                    */}
-                    
-              
-                    </ul>
-                </div>
-                <div className="col-md-4 col-sm-4 text-right">
-                    <p className="powered">Powered by: <Link href="http://www.keenthemes.com/">KeenThemes.com</Link></p>
+        <Container fluid className="bg-dark text-light footer mt-5 pt-5 wow fadeIn">
+            <div className="container py-5">
+                <div className="row g-5">
+                    <div className="col-lg-3 col-md-6">
+                        <h4 className="text-light mb-4">Address</h4>
+
+                        <p className="mb-2"> <FontAwesomeIcon icon={faMapMarkerAlt } className="me-3" fixedWidth />123 Street, New York, USA</p>
+                        <p className="mb-2"> <FontAwesomeIcon icon={faPhoneAlt } className="me-3"  fixedWidth />+012 345 67890</p>
+                        <p className="mb-2"><FontAwesomeIcon icon={faEnvelope } className="me-3"  fixedWidth />info@example.com</p>
+                        <div className="d-flex pt-2">
+                            <Link className="btn btn-outline-light btn-social" href="">
+                                <FontAwesomeIcon icon={faFacebookF } fixedWidth />
+                            </Link>
+                            <Link className="btn btn-outline-light btn-social" href="">
+                                <FontAwesomeIcon icon={faTwitter } fixedWidth />
+                            </Link>
+                            <Link className="btn btn-outline-light btn-social" href="">
+                                <FontAwesomeIcon icon={faLinkedin } fixedWidth />
+                            </Link>
+                            <Link className="btn btn-outline-light btn-social" href="">
+                                <FontAwesomeIcon icon={faInstagram } fixedWidth />
+                            </Link>
+                        </div>
+                    </div>
+                    <div className="col-lg-3 col-md-6">
+                        <h4 className="text-light mb-4">Services</h4>
+                        <Link className="btn btn-link" href="">
+                            <FontAwesomeIcon icon={faAngleRight } className="me-1" fixedWidth />
+                            General Carpentry
+                        </Link>
+                        <Link className="btn btn-link" href="">
+                            <FontAwesomeIcon icon={faAngleRight } className="me-1" fixedWidth />
+                            Furniture Remodeling
+                        </Link>
+                        <Link className="btn btn-link" href="">
+                            <FontAwesomeIcon icon={faAngleRight } className="me-1" fixedWidth />
+                            Wooden Floor
+                        </Link>
+                        <Link className="btn btn-link" href="">
+                            <FontAwesomeIcon icon={faAngleRight } className="me-1" fixedWidth />
+                            Wooden Furniture
+                        </Link>
+                        <Link className="btn btn-link" href="">
+                            <FontAwesomeIcon icon={faAngleRight } className="me-1" fixedWidth />
+                            Custom Carpentry
+                        </Link>
+                    </div>
+                    <div className="col-lg-3 col-md-6">
+                        <h4 className="text-light mb-4">Quick Links</h4>
+                        <Link className="btn btn-link" href="">
+                            <FontAwesomeIcon icon={faAngleRight } className="me-1" fixedWidth />
+                            About Us
+                        </Link>
+                        <Link className="btn btn-link" href="">
+                            <FontAwesomeIcon icon={faAngleRight } className="me-1" fixedWidth />
+                            Contact Us</Link>
+                        <Link className="btn btn-link" href="">
+                            <FontAwesomeIcon icon={faAngleRight } className="me-1" fixedWidth />
+                            Our Services
+                        </Link>
+                        <Link className="btn btn-link" href="">
+                            <FontAwesomeIcon icon={faAngleRight } className="me-1" fixedWidth />
+                            Terms &amp; Condition
+                        </Link>
+                        <Link className="btn btn-link" href="">
+                            <FontAwesomeIcon icon={faAngleRight } className="me-1" fixedWidth />
+                            Support
+                        </Link>
+                    </div>
+                    <div className="col-lg-3 col-md-6">
+                        <h4 className="text-light mb-4">Newsletter</h4>
+                        <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
+                        <div className="position-relative mx-auto max-width-400" >
+                            <input className="form-control border-0 w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email" />
+                            <button type="button" className="btn btn-primary-color py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
+            <Container>
+                <div className="copyright">
+                    <Row>
+                        <div className="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                            <Link className="border-bottom" href="#">Your Site Name</Link>, All Right Reserved.
+                        </div>
+                        <div className="col-md-6 text-center text-md-end">
+                            Designed By <a className="border-bottom" href="https://dotsgrowth.com">Dotsgrowth</a>
+                        </div>
+                    </Row>
+                </div>
+            </Container>
+        </Container>
      
     )
 }
