@@ -19,9 +19,7 @@ export default function Layout({
     <>
 		<CTopHeader />
 		<CHeader />
-		<Container>
-			{children}
-		</Container>
+		{children}
       	<CFooter />
 		<BackToTop />
     </>
