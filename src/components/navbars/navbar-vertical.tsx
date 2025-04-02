@@ -3,13 +3,9 @@
 import { Fragment, useContext } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation'
-import { useMediaQuery } from "react-responsive";
 import {
-  ListGroup,
   Accordion,
   Card,
-  Image,
-  Badge,
   useAccordionButton,
   AccordionContext,
 } from "react-bootstrap";
@@ -87,6 +83,7 @@ const NavbarVertical = (props: any) =>{
                                                     return(
                                                         <li key={menuLevel1Index}>
                                                             <a href={menuLevel1Item.link}>
+                                                                <i className={menuLevel1Item.icon} ></i>
                                                                 <span className="sub-item">{menuLevel1Item.name}</span>
                                                             </a>
                                                         </li>

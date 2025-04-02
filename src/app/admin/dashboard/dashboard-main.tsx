@@ -20,13 +20,32 @@ export default function DashboardMain () {
                         <Card.Body>
                             <Row className="align-items-center">
                                 <div className="col-icon">
-                                    <div className="icon-big text-center icon-primary bubble-shadow-small" >
-                                        <i className="fas fa-table"></i>
+                                    <div className="icon-big text-center icon-info bubble-shadow-small" >
+                                        <i className="fas fa-users"></i>
                                     </div>
                                 </div>
                                 <Col className="col col-stats ms-3 ms-sm-0">
                                     <div className="numbers">
-                                    <p className="card-category">Đang phục vụ</p>
+                                    <p className="card-category">Users</p>
+                                    <h4 className="card-title">1303</h4>
+                                    </div>
+                                </Col>
+                            </Row>
+                        </Card.Body>
+                    </Card>
+                </Col>
+                <Col sm="6" md="3">
+                    <Card className="card-stats card-round">
+                        <Card.Body>
+                            <Row className="align-items-center">
+                                <div className="col-icon">
+                                    <div className="icon-big text-center icon-primary bubble-shadow-small" >
+                                        <i className="fab fa-product-hunt"></i>
+                                    </div>
+                                </div>
+                                <Col className="col col-stats ms-3 ms-sm-0">
+                                    <div className="numbers">
+                                    <p className="card-category">Products</p>
                                     <h4 className="card-title">12</h4>
                                     </div>
                                 </Col>
@@ -39,14 +58,14 @@ export default function DashboardMain () {
                         <Card.Body>
                             <Row className="align-items-center">
                                 <div className="col-icon">
-                                    <div className="icon-big text-center icon-info bubble-shadow-small" >
-                                        <i className="fas fa-users"></i>
+                                    <div className="icon-big text-center icon-secondary bubble-shadow-small" >
+                                        <i className="fas fa-check-circle"></i>
                                     </div>
                                 </div>
                                 <Col className="col col-stats ms-3 ms-sm-0">
                                     <div className="numbers">
-                                    <p className="card-category">Users</p>
-                                    <h4 className="card-title">1303</h4>
+                                    <p className="card-category">Orders</p>
+                                    <h4 className="card-title">576</h4>
                                     </div>
                                 </Col>
                             </Row>
@@ -72,25 +91,7 @@ export default function DashboardMain () {
                         </Card.Body>
                     </Card>
                 </Col>
-                <Col sm="6" md="3">
-                    <Card className="card-stats card-round">
-                        <Card.Body>
-                            <Row className="align-items-center">
-                                <div className="col-icon">
-                                    <div className="icon-big text-center icon-secondary bubble-shadow-small" >
-                                        <i className="fas fa-check-circle"></i>
-                                    </div>
-                                </div>
-                                <Col className="col col-stats ms-3 ms-sm-0">
-                                    <div className="numbers">
-                                    <p className="card-category">Order</p>
-                                    <h4 className="card-title">576</h4>
-                                    </div>
-                                </Col>
-                            </Row>
-                        </Card.Body>
-                    </Card>
-                </Col>
+              
             </Row>
         </div>
     )
