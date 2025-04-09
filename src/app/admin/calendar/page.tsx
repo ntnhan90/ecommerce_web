@@ -1,9 +1,9 @@
 import { Fragment } from "react";
 
-export default function Dishes() {
+export default function Order() {
     return(
         <Fragment>
-            Dishes
+            Calendar
         </Fragment>
         
     )

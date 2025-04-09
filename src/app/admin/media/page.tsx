@@ -1,9 +1,9 @@
 import { Fragment } from "react";
 
-export default function Order() {
+export default function Table() {
     return(
         <Fragment>
-            Order
+            Media
         </Fragment>
         
     )

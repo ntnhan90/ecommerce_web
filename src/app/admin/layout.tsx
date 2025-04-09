@@ -9,6 +9,7 @@ import '../../../public/css/bootstrap.min.css'
 import '../../../public/css/plugins.css'
 import '../../../public/css/kaiadmin.css'
 import '../../../public/css/demo.css'
+import BreadcrumbExample from "@/components/breadcrumbs";
 
 export default function Layout({
     children
@@ -17,7 +18,6 @@ export default function Layout({
 }>) {
     const [showMenu, setShowMenu] = useState(true);
 	const ToggleMenu = () => {
-		console.log("12345")
 		return setShowMenu(!showMenu);
 	};
 
@@ -42,7 +42,10 @@ export default function Layout({
 					<NavbarTop />
 				</div>
 				<div className="container">
-					{children}
+					<div className="page-inner">
+						<BreadcrumbExample />
+						{children}
+					</div>
 				</div>
                 
 				<footer className="footer">

@@ -3,7 +3,7 @@ import { Fragment } from "react";
 export default function Setting() {
     return(
         <Fragment>
-            Setting
+            Payment transaction
         </Fragment>
         
     )

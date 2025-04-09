@@ -95,7 +95,7 @@ const NavbarVertical = (props: any) =>{
                                     }else{
                                         return (
                                         <li className={`nav-item ${
-                                            location.pathname === menu.link ? "active" : ""
+                                            pathname === menu.link ? "active" : ""
                                         }`} key={index}>
                                             <Link href={menu.link} >
                                                 {typeof menu.icon === "string" ? (

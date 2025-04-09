@@ -1,9 +1,9 @@
 import { Fragment } from "react";
 
-export default function Accounts() {
+export default function Setting() {
     return(
         <Fragment>
-            Accounts
+            Payment logs
         </Fragment>
         
     )

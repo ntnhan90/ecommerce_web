@@ -19,10 +19,8 @@ const Login = (props:any) => {
                         <Form>
                         <Form.Group className="mb-3" controlId="username">
                             <Form.Label>Username or email</Form.Label>
-                            <Form.Control
-                            type="email"
-                            name="username"
-                            placeholder="Enter address here"
+                            <Form.Control type="email"
+                            name="username"  placeholder="Enter address here"
                             required
                             />
                         </Form.Group>
@@ -30,10 +28,8 @@ const Login = (props:any) => {
                         {/* Password */}
                         <Form.Group className="mb-3" controlId="password">
                             <Form.Label>Password</Form.Label>
-                            <Form.Control
-                            type="password"
-                            name="password"
-                            placeholder="**************"
+                            <Form.Control type="password"
+                            name="password" placeholder="**************"
                             required
                             />
                         </Form.Group>

@@ -13,35 +13,35 @@ const DashboardMenu = [
 		icon: 'fas fa-shopping-bag',
 	//	link: '/order',
 		children: [
-			{ id: uuid(), link: '/ecommerce/orders', name: 'Orders', icon: 'fas fa-truck', },
-			{ id: uuid(), link: '/ecommerce/invoices', name: 'Invoices',icon:"fas fa-circle"},
-			{ id: uuid(), link: '/ecommerce/products', name: 'Products' ,icon:"fas fa-circle"},
-			{ id: uuid(), link: '/ecommerce/product-categories', name: 'Product Categories',icon:"fas fa-circle"},
-			{ id: uuid(), link: '/ecommerce/product-tags', name: 'Product Tags',icon:"fas fa-circle"},
-			{ id: uuid(), link: '/ecommerce/product-attributes', name: 'Product Attributes',icon:"fas fa-circle"},
-			{ id: uuid(), link: '/ecommerce/product-collections', name: 'Product Collections',icon: 'fas fa-database',},
-			{ id: uuid(), link: '/ecommerce/product-labels', name: 'Product Labels',icon: 'fas fa-tags',},
-			{ id: uuid(), link: '/ecommerce/brands', name: 'Brands',icon: 'fas fa-registered',},
-			{ id: uuid(), link: '/ecommerce/reviews', name: 'Reviews',icon:"fas fa-circle"},
-			{ id: uuid(), link: '/ecommerce/flash-sale', name: 'Flash sale', icon: "fas fa-bolt"},
-			{ id: uuid(), link: '/ecommerce/discount', name: 'Discount', icon: "fas fa-bolt"},
-			{ id: uuid(), link: '/ecommerce/customers', name: 'Customers', icon: "fas fa-users"},
+			{ id: uuid(), link: '/admin/ecommerce/orders', name: 'Orders', icon: 'fas fa-truck', },
+			{ id: uuid(), link: '/admin/ecommerce/invoices', name: 'Invoices',icon:"fas fa-circle"},
+			{ id: uuid(), link: '/admin/ecommerce/products', name: 'Products' ,icon:"fas fa-circle"},
+			{ id: uuid(), link: '/admin/ecommerce/product-categories', name: 'Product Categories',icon:"fas fa-circle"},
+			{ id: uuid(), link: '/admin/ecommerce/product-tags', name: 'Product Tags',icon:"fas fa-circle"},
+			{ id: uuid(), link: '/admin/ecommerce/product-attributes', name: 'Product Attributes',icon:"fas fa-circle"},
+			{ id: uuid(), link: '/admin/ecommerce/product-collections', name: 'Product Collections',icon: 'fas fa-database',},
+			{ id: uuid(), link: '/admin/ecommerce/product-labels', name: 'Product Labels',icon: 'fas fa-tags',},
+			{ id: uuid(), link: '/admin/ecommerce/brands', name: 'Brands',icon: 'fas fa-registered',},
+			{ id: uuid(), link: '/admin/ecommerce/reviews', name: 'Reviews',icon:"fas fa-circle"},
+			{ id: uuid(), link: '/admin/ecommerce/flash-sale', name: 'Flash sale', icon: "fas fa-bolt"},
+			{ id: uuid(), link: '/admin/ecommerce/discount', name: 'Discount', icon: "fas fa-bolt"},
+			{ id: uuid(), link: '/admin/ecommerce/customers', name: 'Customers', icon: "fas fa-users"},
 		]
 	},
     {
 		id: uuid(),
 		title: 'Pages',
 		icon: 'fas fa-file',
-		link: '/pages'
+		link: '/admin/pages'
 	},
     {
 		id: uuid(),
 		title: 'Blogs',
 		icon: 'fas fa-newspaper',
 		children: [
-			{ id: uuid(), link: '/blog/posts', name: 'Post' ,icon:"fas fa-file-o"},
-			{ id: uuid(), link: '/blog/categories', name: 'Categories', icon:"fas fa-folder"},
-			{ id: uuid(), link: '/blog/tags', name: 'Tags' ,icon:"fas fa-tag"},
+			{ id: uuid(), link: '/admin/blog/posts', name: 'Post' ,icon:"fas fa-file-o"},
+			{ id: uuid(), link: '/admin/blog/categories', name: 'Categories', icon:"fas fa-folder"},
+			{ id: uuid(), link: '/admin/blog/tags', name: 'Tags' ,icon:"fas fa-tag"},
 		]
 	},
     {
@@ -49,54 +49,54 @@ const DashboardMenu = [
 		title: 'Payments',
 		icon: 'fas fa-money-check-alt',
 		children: [
-			{ id: uuid(), link: '/payments/transactions', name: 'Transactions' ,icon:"fas fa-circle"},
-			{ id: uuid(), link: '/payments/logs', name: 'Payments Logs', icon:"fas fa-circle"},
-			{ id: uuid(), link: '/payments/method', name: 'Payments Methods' ,icon:"fas fa-circle"},
+			{ id: uuid(), link: '/admin/payments/transactions', name: 'Transactions' ,icon:"fas fa-circle"},
+			{ id: uuid(), link: '/admin/payments/logs', name: 'Payments Logs', icon:"fas fa-circle"},
+			{ id: uuid(), link: '/admin/payments/method', name: 'Payments Methods' ,icon:"fas fa-circle"},
 		]
 	},
     {
 		id: uuid(),
 		title: 'Testimonials',
 		icon: 'fas fa-user-cog',
-		link: '/testimonials'
+		link: '/admin/testimonials'
 	},
     {
 		id: uuid(),
 		title: 'Contacts',
 		icon: 'fas fa-id-card',
-		link: '/contacts'
+		link: '/admin/contacts'
 	},
 	{
 		id: uuid(),
 		title: 'Media',
 		icon: 'fas fa-folder',
-		link: '/media'
+		link: '/admin/media'
 	},
 	{
 		id: uuid(),
 		title: 'Tools',
 		icon: 'fas fa-wrench',
 		children: [
-			{ id: uuid(), link: '/tools/data', name: 'Export/Import' ,icon:"fas fa-file-export"},
+			{ id: uuid(), link: '/admin/tools/data', name: 'Export/Import' ,icon:"fas fa-file-export"},
 		]
 	},
 	{
 		id: uuid(),
 		title: 'Calendar',
 		icon: 'fas fa-calendar-alt',
-		link: '/calendar'
+		link: '/admin/calendar'
 	},
 	{
 		id: uuid(),
 		title: 'Settings',
 		icon: 'fas fa-cogs',
-		link: '/settings'
+		link: '/admin/settings'
 	},
 	{
 		id: uuid(),
 		title: 'Admin',
 		icon: 'fas fa-user-shield',
-		link: '/admin'
+		link: '/admin/system'
 	},
 	{
 		id: uuid(),

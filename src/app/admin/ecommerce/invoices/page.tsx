@@ -1,9 +1,9 @@
 import { Fragment } from "react";
 
-export default function Table() {
+export default function Setting() {
     return(
         <Fragment>
-            Table
+            Invoices
         </Fragment>
         
     )
