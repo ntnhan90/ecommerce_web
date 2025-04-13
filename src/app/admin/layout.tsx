@@ -1,8 +1,8 @@
 'use client'
 import { useState } from "react"
-import NavbarTop from "@/components/navbars/navbar-top";
-import NavbarVertical from "@/components/navbars/navbar-vertical";
-import HeaderLogo from "@/components/navbars/header-logo";
+import NavbarTop from "@/components/admin/navbars/navbar-top";
+import NavbarVertical from "@/components/admin/navbars/navbar-vertical";
+import HeaderLogo from "@/components/admin/navbars/header-logo";
 // import theme style scss file
 import '../../../public/css/fonts.min.css'
 import '../../../public/css/bootstrap.min.css'
@@ -23,9 +23,7 @@ export default function Layout({
 
     return (
        	<div id="wrapper" className={`${showMenu ? 'wrapper' : 'wrapper sidebar_minimize nav_open'}`} cz-shortcut-listen="true"> 
-			<NavbarVertical
-				showMenu={showMenu}
-				onClick={(value:any) => setShowMenu(value)}
+			<NavbarVertical showMenu={showMenu} onClick={(value:any) => setShowMenu(value)}
 				data={{
 					showMenu: showMenu,
 					SidebarToggleMenu: ToggleMenu
@@ -33,12 +31,11 @@ export default function Layout({
 			/>
             <div className="main-panel">
                 <div className="main-header">
-					<HeaderLogo 
-						data={{
+					<HeaderLogo  data={{
 							showMenu: showMenu,
 							SidebarToggleMenu: ToggleMenu
 						}}
-						/>
+					/>
 					<NavbarTop />
 				</div>
 				<div className="container">
@@ -53,25 +50,25 @@ export default function Layout({
 						<nav className="pull-left">
 						<ul className="nav">
 							<li className="nav-item">
-							<a className="nav-link" href="http://www.themekita.com">
-								ThemeKita
-							</a>
+								<a className="nav-link" href="https://dotsgrowth.com/">
+									Dotsgrowth
+								</a>
 							</li>
 							<li className="nav-item">
-							<a className="nav-link" href="#"> Help </a>
+								<a className="nav-link" href="#"> Help </a>
 							</li>
 							<li className="nav-item">
-							<a className="nav-link" href="#"> Licenses </a>
+								<a className="nav-link" href="#"> Licenses </a>
 							</li>
 						</ul>
 						</nav>
 						<div className="copyright">
 						2024, made with <i className="fa fa-heart heart text-danger"></i> by
-							<a href="http://www.themekita.com">ThemeKita</a>
+							<a href="https://dotsgrowth.com/">Dotsgrowth</a>
 						</div>
 						<div>
 						Distributed by
-						<a target="_blank" href="https://themewagon.com/">ThemeWagon</a>.
+						<a target="_blank" href="https://dotsgrowth.com/">Dotsgrowth</a>.
 						</div>
                   	</div>
                 </footer>

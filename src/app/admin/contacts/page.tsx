@@ -1,16 +1,27 @@
 import { Fragment } from "react";
+import { Form, InputGroup, Button } from "react-bootstrap";
+import FilterAdmin from "@/components/admin/filter";
 
-export default function Table() {
+export default function Contact() {
     return(
         <Fragment>
+            <FilterAdmin />
             <div className="card">
                 <div className="card-header">
                     <div className="d-flex align-items-center">
-                        <h4 className="card-title">Add Row</h4>
+                        <button className="btn btn-outline-primary">
+                            <i className="fas fa-filter me-1"></i>
+                            Filter
+                        </button>
+                        
                         <button className="btn btn-outline-primary ms-auto">
                             <i className="fa fa-download me-1"></i>
                             Export
-                           </button>
+                        </button>
+                        <button className="btn btn-outline-primary ms-3">
+                            <i className="fas fa-sync-alt me-1"></i>
+                            Reload
+                        </button>
                     </div>
                 </div>
                 <div className="card-body">
@@ -136,7 +147,18 @@ export default function Table() {
                                 </div>
                             </div>
                             <div className="row">
+                                
                                 <div className="col-sm-12 col-md-5">
+                                    <div className="dataTables_length" id="add-row_length">
+                                        <label>Show 
+                                            <select name="add-row_length" aria-controls="add-row" className="form-control form-control-sm">
+                                                <option value="10">10</option>
+                                                <option value="25">25</option>
+                                                <option value="50">50</option>
+                                                <option value="100">100</option>
+                                            </select> entries
+                                        </label>
+                                    </div>
                                     <div className="dataTables_info" id="add-row_info" role="status" aria-live="polite">Showing 1 to 5 of 10 entries</div>
                                 </div>
                                 <div className="col-sm-12 col-md-7">

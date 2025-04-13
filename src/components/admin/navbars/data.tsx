@@ -39,7 +39,7 @@ const DashboardMenu = [
 		title: 'Blogs',
 		icon: 'fas fa-newspaper',
 		children: [
-			{ id: uuid(), link: '/admin/blog/posts', name: 'Post' ,icon:"fas fa-file-o"},
+			{ id: uuid(), link: '/admin/blog/posts', name: 'Post' ,icon:"fas fa-file"},
 			{ id: uuid(), link: '/admin/blog/categories', name: 'Categories', icon:"fas fa-folder"},
 			{ id: uuid(), link: '/admin/blog/tags', name: 'Tags' ,icon:"fas fa-tag"},
 		]
@@ -97,6 +97,12 @@ const DashboardMenu = [
 		title: 'Admin',
 		icon: 'fas fa-user-shield',
 		link: '/admin/system'
+	},
+	{
+		id: uuid(),
+		title: 'Login',
+		icon: 'fas fa-user-shield',
+		link: '/admin/login'
 	},
 	{
 		id: uuid(),

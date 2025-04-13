@@ -2,10 +2,9 @@
 
 import Link from 'next/link';
 import {
-	Nav,
 	Navbar,
 	Form,
-	Container
+	Container,
 } from 'react-bootstrap';
 import Message from './message';
 import Noti from './noti';
@@ -41,14 +40,12 @@ const NavbarTop = (props: any) =>{
 							</form>
 						</ul>
                 	</li>
-
+					<Link className='btn btn-outline-secondary' href='#'>View website</Link>
 					<Message />
 					<Noti />
-
 					<Account />
 				</ul>
 			</Container>
-				
         </Navbar>
     )
 }
